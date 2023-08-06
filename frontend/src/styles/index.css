@@ -1,0 +1,219 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* VARIABLES: Colors | Font */
+:root {
+  /* --darktxt: #4E7180;
+  --btn1: #FFEA20;
+  --btn2: #8DCBE6;
+  --blue1: #9DF1DF;
+  --blue2: #E3F6FF;
+  --blue3: hsl(197, 49%, 10%);
+  --special: 'Lilita One', cursive;
+  --special2: 'Nerko One', cursive; */
+}
+/* Body properties */
+html, body {
+	overflow-x: hidden;
+	height: 100%;
+}
+
+/* Define the keyframes for the animation */
+@keyframes hideScrollBar {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+
+
+/* NAVBAR STARTS */
+
+/* Logo */
+#logo {
+	width: 100px;
+	height: auto;
+}
+
+/* Side Nav-bar Starts */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f8f9fa!important;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: 0px 0px 8px white;
+}
+
+.sidenav a {
+  padding: 0 8px 0 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav::-webkit-scrollbar { 
+  display: none; 
+} 
+
+
+.animated-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.animated-icon span {
+  background: #f3e5f5;
+}
+
+.animated-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.animated-icon span:nth-child(2) {
+  top: 10px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.animated-icon span:nth-child(3) {
+  top: 20px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.animated-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+  left: 8px;
+}
+
+.animated-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.animated-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 21px;
+  left: 8px;
+}
+button {border:none !important;}
+button:focus{outline: none;}
+
+.center {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* == hamburger icon */
+.animated-icon span {
+  background: white;
+}
+
+/* == side nav blur */
+#mySidenav {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+	backdrop-filter: blur(10px) !important;
+  z-index: 100;
+}
+
+/* == hr */
+#mySidenav hr {
+  display: block;
+  border: solid 2px white !important;
+	width: 90%;
+	margin: 1rem 0 1rem 0.9rem;
+}
+
+/* == paragraph */
+#mySidenav p {
+  color: var(--btn1);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 2rem;
+}
+
+/* == navbar width */
+.navbar {
+  padding-right: 1rem;
+  width: 100vw;
+}
+
+.navbar-toggler {
+  display: block !important;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Side Nav-bar Ends */
+
+/* NAVBAR ENDS */
+

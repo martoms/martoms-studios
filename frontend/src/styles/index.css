@@ -42,8 +42,8 @@ html, body {
 
 /* Logo */
 #logo {
-	width: 100px;
-	height: auto;
+	height: 30px;
+	width: auto;
 }
 
 /* Side Nav-bar Starts */
@@ -219,10 +219,24 @@ button:focus{outline: none;}
 
 /* LANDING STARTS */
 
-/* Services Carousel */
+/* Services Carousel Starts */
 div.services {
+  position: relative;
   width: 100%;
   height: calc(100vh - 47.29px);
+}
+
+/* Main Logo */
+#main-logo {
+  position: absolute;
+  z-index: 5;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  justify-self: center;
 }
 
 .services .carousel-item {
@@ -231,10 +245,54 @@ div.services {
 
 .services img {
   height: calc(100vh - 47.29px);
-  width: auto;
+  width: 100%;
   object-fit: cover;
 }
 
+/* Services Carousel Ends */
+
+/* Self Intro Starts */
+
+div.self-intro {
+  padding: 1.5rem;
+}
+
+.self-intro h1 {
+  font-weight: 900;
+}
+
+.self-intro h3 {
+  margin: 0;
+}
+
+.self-intro p {
+  margin-top: 2rem;
+  padding: 0 1rem;
+  border-left: 2px solid black;
+}
+
+.self-intro-pic {
+  margin-left: -1.5rem;
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+}
+
+.self-intro-pic img {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+}
+
+/* .titles {
+  border-left: 2px solid black;
+  padding-left: 1rem;
+} */
+
+
+
+/* Self Intro Ends */
 
 /* LANDING ENDS */
 

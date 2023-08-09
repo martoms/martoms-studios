@@ -1,6 +1,7 @@
 import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import NavToggle from '../script_dependencies/NavToggle';
+import navLogo from '../../images/ms-logo.svg';
 
 const MobileNav = () => {
     return ( 
@@ -18,7 +19,7 @@ const MobileNav = () => {
             {/* Navbar brand */}
             <div className="ms-auto">
             <Link className="navbar-brand" to="/">
-                <img src="/images/martoms-studios.svg" alt="logo" id="logo" />
+                <img src={navLogo} alt="logo" id="logo" />
             </Link>
             </div>
         </Navbar>

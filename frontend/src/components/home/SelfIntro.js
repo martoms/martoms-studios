@@ -1,4 +1,4 @@
-import placeholder from '../images/placeholder.webp'
+import placeholder from '../../images/placeholder.webp'
 
 const SelfIntro = () => {
     return (

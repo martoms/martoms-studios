@@ -1,6 +1,6 @@
 import { Carousel } from 'react-bootstrap';
-import placeholder from '../images/placeholder.webp'
-import martomsStudios from '../images/main-logo-b.svg'
+import placeholder from '../../images/placeholder.webp'
+import martomsStudios from '../../images/main-logo-b.svg'
 
 
 function Services() {

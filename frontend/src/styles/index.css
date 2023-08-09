@@ -217,6 +217,28 @@ button:focus{outline: none;}
 
 /* NAVBAR ENDS */
 
+/* LANDING STARTS */
+
+/* Services Carousel */
+div.services {
+  width: 100%;
+  height: calc(100vh - 47.29px);
+}
+
+.services .carousel-item {
+  position: relative;
+}
+
+.services img {
+  height: calc(100vh - 47.29px);
+  width: auto;
+  object-fit: cover;
+}
+
+
+/* LANDING ENDS */
+
+
 /* FOOTER STARTS */
 
 /* Prefooter */

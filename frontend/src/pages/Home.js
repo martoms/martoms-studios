@@ -1,7 +1,9 @@
+import Services from "./Services";
+
 const Home = () => {
     return (
-        <div id="landing" className="vh-100 bg-primary">
-
+        <div id="landing" className="bg-primary">
+            <Services />
         </div>
     );
 }

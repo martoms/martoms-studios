@@ -3,8 +3,9 @@ require('dotenv').config();
 // Require directives
 const express = require('express');
 const cors = require('cors');
-const {connect} = require('mongoose');
+const { connect } = require('mongoose');
 const homeRoutes = require('./routes/homeRoutes');
+const skillsRoutes = require('./routes/skillsRoutes');
 // const { pageNotFound } = require('./middlewares/pageNotFound');
 
 // express app
@@ -13,7 +14,6 @@ const app = express();
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
-app.use(cookieParser());
 app.use(cors());
 
 
@@ -39,3 +39,4 @@ connect(process.env.MONGO_URI,
 
 // Route Middlewares
 app.use(homeRoutes);
+app.use('/skills', skillsRoutes);

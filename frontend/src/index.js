@@ -6,10 +6,13 @@ import './styles/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { AllContextProvider } from './contexts/AllContexts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AllContextProvider>
+      <App />
+    </AllContextProvider>
   </React.StrictMode>
 );

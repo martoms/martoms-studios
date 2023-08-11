@@ -6,6 +6,7 @@ const cors = require('cors');
 const { connect } = require('mongoose');
 const homeRoutes = require('./routes/homeRoutes');
 const skillsRoutes = require('./routes/skillsRoutes');
+const projectRoutes = require('./routes/projectRoutes');
 // const { pageNotFound } = require('./middlewares/pageNotFound');
 
 // express app
@@ -40,3 +41,4 @@ connect(process.env.MONGO_URI,
 // Route Middlewares
 app.use(homeRoutes);
 app.use('/skills', skillsRoutes);
+app.use('/projects', projectRoutes);

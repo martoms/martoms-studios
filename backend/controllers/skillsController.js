@@ -1,4 +1,4 @@
-const Skill = require('../models/Skills');
+const Skill = require('../models/Skill');
 
 // Retrieve Skills
 const skills_get = (req, res) => {

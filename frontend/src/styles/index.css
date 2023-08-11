@@ -11,14 +11,16 @@
 
 /* VARIABLES: Colors | Font */
 :root {
-  /* --darktxt: #4E7180;
-  --btn1: #FFEA20;
-  --btn2: #8DCBE6;
-  --blue1: #9DF1DF;
-  --blue2: #E3F6FF;
-  --blue3: hsl(197, 49%, 10%);
-  --special: 'Lilita One', cursive;
-  --special2: 'Nerko One', cursive; */
+  --bg0: rgb(255, 255, 255);
+  --bg1: hsl(0, 0%, 98%);
+  /* --darktxt: #4E7180; */
+  /* --btn1: #FFEA20; */
+  /* --btn2: #8DCBE6; */
+  /* --blue1: #9DF1DF; */
+  /* --blue2: #E3F6FF; */
+  /* --blue3: hsl(197, 49%, 10%); */
+  /* --special: 'Lilita One', cursive; */
+  /* --special2: 'Nerko One', cursive; */
 }
 /* Body properties */
 html, body {
@@ -253,13 +255,31 @@ div.services {
 
 /* Self Intro and Skills Start */
 
+div.dev,
+div.graphic {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+div.dev > div > div,
+div.graphic > div > div {
+  background-color: var(--bg1);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
 div.self-intro,
-div.skills {
+div.skills,
+div#projects {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .self-intro h1,
-div.skills h1 {
+div.skills h1,
+div#projects h1 {
   font-weight: 900;
 }
 

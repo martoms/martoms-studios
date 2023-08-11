@@ -2,6 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 // Internal Modular CSS
 import './styles/index.css';
+import './styles/projects.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';

@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar';
 // Pages
 import Home from './pages/Home';
 import Footer from './components/Footer';
+import WebDevProjects from './pages/WebDevProjects';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
           <Navbar/>
           <Routes>
             <Route exact path='/' element={<Home />} />
+            <Route path='/projects/web-development' element={<WebDevProjects />} />
           </Routes>
           <Footer />
       </Router>

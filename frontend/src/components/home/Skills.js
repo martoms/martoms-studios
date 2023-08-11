@@ -111,39 +111,55 @@ const Skills = () => {
                 <h1>Skills</h1>
                 <div className="dev">
                     <h3>Web Development</h3>
+                    <hr />
                     <div>
-                        <h2>Languages</h2>
+                        <div>
+                            <h2>Languages</h2>
                             <div className="skills-list">
                                 { languagesList }
                             </div>
-                        <h2>Frameworks</h2>
+                        </div>
+                        <div>
+                            <h2>Frameworks</h2>
                             <div className="skills-list">
                                 { frameworksList }
                             </div>
-                        <h2>Tools</h2>
+                        </div>
+                        <div>
+                            <h2>Tools</h2>
                             <div className="skills-list">
                                 { devToolsList }
                             </div>
-                        <h2>Databases</h2>
+                        </div>
+                        <div>
+                            <h2>Databases</h2>
                             <div className="skills-list">
                                 { databasesList }
                             </div>
-                        <h2>Others</h2>
+                        </div>
+                        <div>
+                            <h2>Others</h2>
                             <div className="other-skills">
                                 { devOthersList }
                             </div>
+                        </div>
                     </div>
                 </div>
                 <div className="graphic">
                     <h3>Graphic Design</h3>
+                    <hr />
                     <div>
-                        <h2>Category</h2>
+                        <div>
+                            <h2>Category</h2>
                             <div className="skills-list">
                                 { categoriesList }
                             </div>
-                        <h2>Tools</h2>
-                        <div className="skills-list">
-                            { graphicToolsList }
+                        </div>
+                        <div>
+                            <h2>Tools</h2>
+                            <div className="skills-list">
+                                { graphicToolsList }
+                            </div>
                         </div>
                     </div>
                 </div>

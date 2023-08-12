@@ -1,6 +1,7 @@
 import placeholder from '../images/placeholder.webp'
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Contact from '../components/Contact';
 
 const AboutMe = () => {
     return (
@@ -23,9 +24,7 @@ const AboutMe = () => {
                 </Button>
             </div>
             <hr />
-            <div className='contact'>
-                
-            </div>
+            <Contact />
         </div>
     );
 }

@@ -13,7 +13,7 @@ const graphicDesignProjectSchema = new mongoose.Schema({
             purpose : {
                 type : String
             },
-            for : {
+            recepient : {
                 type : String
             },
             createdOn : {

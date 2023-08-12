@@ -59,7 +59,11 @@ div.graphic-proj > a h4 {
 
 /* Web Dev Projects End */
 
-/* Web Dev Project Details Start */
+/* Project Details Start */
+
+div.dev-project-details { 
+    min-height: 95vh !important;
+}
 
 div.dev-project-details h6 {
     padding-right: 2rem;
@@ -99,8 +103,51 @@ div.project-description {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-div.project-description h3 {
+div.project-description h3,
+div.project-description h4,
+div.project-description h5 {
     font-weight: 700;
 }
 
-/* Web Dev Project Details End */
+.purpose {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.project-for {
+    font-weight: 500;
+}
+
+div.project-images {
+    margin: 10px -1rem;
+    position: relative;
+}
+
+div.project-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+div.desclaimer {
+    position: relative;
+    background-color: rgb(250, 250, 195);
+    color: var(--txt1);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+div.desclaimer p {
+    margin: 1rem 0 0 0;
+}
+
+.close-icon {
+    color: rgb(90, 90, 24);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 800;
+}
+
+/* Project Details End */

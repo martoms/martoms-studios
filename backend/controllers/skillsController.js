@@ -8,7 +8,7 @@ const skills_get = (req, res) => {
             res.status(201).json(skills);
         }).catch((err) => {
             console.log(err);
-            res.status.json(err);
+            res.json(err);
         });
 };
 
@@ -23,7 +23,7 @@ const skills_post = (req, res) => {
             res.status(201).json(skills);
         }).catch((err) => {
             console.log(err);
-            res.status.json(err);
+            res.json(err);
         });
 };
 
@@ -49,7 +49,7 @@ const skills_put = (req, res) => {
     ).then((update) => {
         res.status(200).json(update);
     }).catch((err) => {
-        res.status.json(err);
+        res.json(err);
     });
 };
 

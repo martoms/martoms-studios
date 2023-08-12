@@ -5,6 +5,9 @@ const webDevProjectSchema = new mongoose.Schema({
     project : {
         type : String
     },
+    subtitle : {
+        type : String
+    },
     dateCreated : {
         type : Date
     },

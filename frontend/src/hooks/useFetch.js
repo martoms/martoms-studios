@@ -4,6 +4,7 @@ import { AllContext } from "../contexts/AllContexts";
 const useFetch = (url, action) => {
     const [error, setError] = useState(null);
     const [isPending, setIsPending] = useState(true);
+    const [details, setDetails] = useState('');
     const { dispatch, skills } = useContext(AllContext);
 
     useEffect(() => {
@@ -19,7 +20,11 @@ const useFetch = (url, action) => {
             .then(data => {
                 setIsPending(false);
                 setError(null);
-                dispatch({ type: action, payload: data });
+                if (action !== undefined) {
+                    dispatch({ type: action, payload: data });
+                } else {
+                    setDetails(data);
+                }
             })
             .catch(err => {
                 if (err.name === 'AbortError') {
@@ -34,7 +39,7 @@ const useFetch = (url, action) => {
 
     }, [url, dispatch, action, skills]);
 
-    return { isPending, error };
+    return { isPending, error, details };
 }
  
 export default useFetch;

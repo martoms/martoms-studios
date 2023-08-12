@@ -1,21 +1,74 @@
-/* Web Dev Projects */
+/* Web Dev Projects Start */
 
 div.web-dev-proj {
     max-height: 80vh;
     overflow-y: auto;
 }
 
-div.web-dev-proj > div {
+div.web-dev-proj a {
+    background-color: var(--bg0);
+    color: var(--txt0);
+    text-align: left;
+    border-color: transparent;
+    width: 100%;
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-div.web-dev-proj > div p {
+div.web-dev-proj > a p {
     margin-bottom: 0;
 }
 
-div.web-dev-proj > div h4 {
+div.web-dev-proj > a h4 {
     font-weight: 700;
 }
+
+/* Web Dev Projects End */
+
+/* Web Dev Project Details Start */
+
+div.dev-project-details h6 {
+    padding-right: 2rem;
+}
+
+div.project-dates {
+    color: var(--txt2);
+}
+
+div.project-dates p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1rem;
+    margin-bottom: 0;
+}
+
+div.project-dates p span {
+    font-weight: 300;
+}
+
+div.project-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.project-links a {
+    margin-bottom: 10px;
+}
+
+div.project-description {
+    overflow-y: auto;
+    width: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+div.project-description h3 {
+    font-weight: 700;
+}
+
+/* Web Dev Project Details End */

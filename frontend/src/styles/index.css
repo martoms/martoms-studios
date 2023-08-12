@@ -11,8 +11,11 @@
 
 /* VARIABLES: Colors | Font */
 :root {
-  --bg0: rgb(255, 255, 255);
+  --bg0: hsl(0, 0%, 100%);
   --bg1: hsl(0, 0%, 98%);
+  --fbg: #E3F6FF;
+  --txt0: hsl(0, 0%, 10%);
+  --txt2: hsl(0, 0%, 50%);
   /* --darktxt: #4E7180; */
   /* --btn1: #FFEA20; */
   /* --btn2: #8DCBE6; */
@@ -277,13 +280,15 @@ div.graphic > div > div {
 
 div.self-intro,
 div.skills,
-div#projects {
+div#projects,
+div.dev-project-details {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .self-intro h1,
 div.skills h1,
-div#projects h1 {
+div#projects h1,
+div.dev-project-details h1 {
   font-weight: 900;
 }
 
@@ -372,8 +377,8 @@ div.other-skills p {
 
 /* Prefooter */
 div.prefooter {
-    background-color: var(--blue2);
-    color: var(--blue3);
+    background-color: var(--fbg);
+    /* color: var(--blue3); */
     text-align: center;
     padding: 2rem 0;
   }
@@ -429,3 +434,25 @@ div.prefooter {
   }
 
 /* FOOTER ENDS */
+
+/* GENERAL STYLING */
+.pointer {
+  cursor: pointer;
+}
+
+/* The pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pointer:active {
+  animation: pulse 0.3s ease;
+}

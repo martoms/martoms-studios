@@ -1,6 +1,8 @@
 import useFetch from "../hooks/useFetch";
 import { useContext } from "react";
 import { AllContext } from "../contexts/AllContexts";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const WebDevProjects = () => {
 
@@ -18,10 +20,10 @@ const WebDevProjects = () => {
             const { _id, project, subtitle } = proj
 
             return (
-                <div key={_id}>
+                <Button key={_id} className="pointer" as={Link} to={`/projects/web-development/${_id}`}>
                     <h4>{ project }</h4>
                     <p>{ subtitle }</p>
-                </div>
+                </Button>
             )
         });
         

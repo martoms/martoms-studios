@@ -12,7 +12,7 @@ const useHandleForm = (initialFormState, justme, more) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const sendMessage = async (e) => {
 
     e.preventDefault();
 
@@ -59,11 +59,60 @@ const useHandleForm = (initialFormState, justme, more) => {
     };
   };
 
+  const adminLogin = async (e) => {
+
+    e.preventDefault();
+
+    if (isPending) {
+        Swal.fire({
+            title: 'Loading...',
+            text: 'Please wait 😊', 
+            didOpen: () => {
+                Swal.showLoading();
+            },
+    });
+    } else {
+        Swal.close();
+    }
+    
+    try {
+        const result = await fetch(`${process.env.REACT_APP_API_URL}/admin`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+        const data = await result.json();
+        setFormData(initialFormState);
+        if (data.access) {
+            setIsPending(false);
+            localStorage.setItem('token', data.access);
+            Swal.fire({
+                title: 'Welcome',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            })
+        } else {
+            setIsPending(false);
+            Swal.fire({
+                title: 'Login Failed',
+                icon: 'error',
+                text: data
+            });
+        }
+    } catch (err) {
+        setIsPending(false);
+        console.log(err);
+    };
+  };
+
   return {
     formData,
     setFormData,
     handleForm,
-    handleSubmit
+    sendMessage,
+    adminLogin
   };
 };
 

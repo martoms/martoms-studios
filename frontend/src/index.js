@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './styles/index.css';
 import './styles/projects.css';
 import './styles/aboutme.css';
+import './styles/admin.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';

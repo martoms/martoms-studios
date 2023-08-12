@@ -6,11 +6,14 @@ const useFetch = (url, action) => {
     const [isPending, setIsPending] = useState(true);
     const [details, setDetails] = useState('');
     const { dispatch, skills } = useContext(AllContext);
+    const token = localStorage.getItem('token');
 
     useEffect(() => {
 
         const abortCont = new AbortController();
-        fetch(url).then(res => {
+        fetch(url, {
+            headers: {'Authorization': `Bearer ${token}`}
+        }).then(res => {
                 if (!res.ok) {
                     throw Error('There seems to be a problem fetching data.');
                 } else {
@@ -37,7 +40,7 @@ const useFetch = (url, action) => {
 
         return () => abortCont.abort();
 
-    }, [url, dispatch, action, skills]);
+    }, [url, dispatch, action, skills, token]);
 
     return { isPending, error, details };
 }

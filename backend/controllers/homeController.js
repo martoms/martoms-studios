@@ -81,7 +81,7 @@ const login = (req, res) => {
 
               const token = createAccessToken(admin);
               
-              res.status(200).json(token);
+              res.status(200).json({ access: token });
             } else {
               throw Error('Incorrect password.');
             }

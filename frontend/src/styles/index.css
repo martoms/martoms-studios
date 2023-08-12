@@ -297,7 +297,8 @@ div.skills h1,
 div#projects h1,
 div.dev-project-details h1,
 div#about-me h1,
-div.contact h2 {
+div.contact h2,
+#all-messages h1 {
   font-weight: 900;
 }
 

@@ -12,7 +12,7 @@ const Contact = () => {
 
     const {
         handleForm,
-        handleSubmit,
+        sendMessage,
         formData,
         setFormData
     } = useHandleForm(initialFormState);
@@ -31,7 +31,7 @@ const Contact = () => {
                 <hr />
                 <p>or leave a message</p>
             </div>
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={sendMessage}>
                 <Form.Label htmlFor="name">
                     Name
                 </Form.Label>

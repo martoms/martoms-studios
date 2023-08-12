@@ -1,10 +1,19 @@
 const express = require('express');
-const { index_get } = require('../controllers/homeController');
+const { verify } = require('../middlewares/auth');
+const { contact_get, openContact_get, contact_post, password, login } = require('../controllers/homeController');
 
 const router = express.Router();
 
-// Go to Home Page
-router.get('/', index_get);
+// Retrieve All Messages
+router.get('/contacts', verify, contact_get);
+// Open a message
+router.get('/contacts/:id', verify, openContact_get);
+// Create Message
+router.post('/contacts/send', contact_post);
+// Create Password
+router.post('/password', verify, password);
+// admin login
+router.post('/admin', login);
 
 
 // Module Export

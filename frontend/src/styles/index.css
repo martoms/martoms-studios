@@ -284,18 +284,21 @@ div.graphic > div > div {
 div.self-intro,
 div.skills,
 div#projects,
-div.dev-project-details {
+div.dev-project-details,
+div#about-me {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .self-intro h1,
 div.skills h1,
 div#projects h1,
-div.dev-project-details h1 {
+div.dev-project-details h1,
+div#about-me h1 {
   font-weight: 900;
 }
 
-.self-intro h3 {
+.self-intro h3,
+#about-me h3 {
   margin: 0;
 }
 
@@ -305,7 +308,8 @@ div.skills h2 {
   font-size: 1.2rem;
 }
 
-.self-intro p {
+.self-intro p,
+.about-me-description {
   margin-top: 2rem;
   padding: 0 1rem;
   border-left: 2px solid black;

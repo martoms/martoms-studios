@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const skillsSchema = new mongoose.Schema({
+const skillSchema = new mongoose.Schema({
 
     dev : {
         languages : {
@@ -32,4 +32,4 @@ const skillsSchema = new mongoose.Schema({
 
 
 // Module Export
-module.exports = mongoose.model('Skill', skillsSchema);
+module.exports = mongoose.model('Skill', skillSchema);

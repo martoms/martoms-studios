@@ -9,6 +9,7 @@ import WebDevProjects from './pages/WebDevProjects';
 import WebDevProjectDetails from './pages/WebDevProjectDetails';
 import GraphicDesignProjects from './pages/GraphicDesignProjects';
 import GraphicDesignProjectDetails from './pages/GraphicDesignProjectDetails';
+import AboutMe from './pages/AboutMe';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/projects/web-development/:id' element={<WebDevProjectDetails />} />
             <Route path='/projects/graphic-design' element={<GraphicDesignProjects />} />
             <Route path='/projects/graphic-design/:category' element={<GraphicDesignProjectDetails />} />
+            <Route path='/about' element={<AboutMe />} />
           </Routes>
           <Footer />
       </Router>

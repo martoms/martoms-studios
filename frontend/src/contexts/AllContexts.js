@@ -10,6 +10,11 @@ const allContextReducer = (state, action) => {
                 ...state,
                 skills: action.payload
             };
+        case 'SET_DEVPROJ':
+            return {
+                ...state,
+                devProj: action.payload
+            };
         default:
             return state
     }
@@ -18,7 +23,8 @@ const allContextReducer = (state, action) => {
 const AllContextProvider = ({ children }) => {
 
     const [state, dispatch] = useReducer(allContextReducer, {
-        skills: null
+        skills: null,
+        devProj: null
     });
 
     return (

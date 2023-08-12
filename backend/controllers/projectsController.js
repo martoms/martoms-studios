@@ -7,7 +7,8 @@ const webDevProj_get = (req, res) => {
         {},
         {
             project: 1,
-            subtitle: 1
+            subtitle: 1,
+            order: 1
         }
     ).then((projects) => {
         res.status(200).json(projects);

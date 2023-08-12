@@ -256,7 +256,11 @@ div.services {
 /* Self Intro and Skills Start */
 
 div.dev,
-div.graphic {
+div.graphic,
+div.web-dev-proj {
+  min-height: 80vh;
+  overflow-y: auto;
+  width: auto;
   padding: 1rem;
   border-radius: 10px;
   margin-bottom: 1rem;

@@ -260,8 +260,9 @@ div.services {
 
 div.dev,
 div.graphic,
-div.web-dev-proj {
-  min-height: 80vh;
+div.web-dev-proj,
+div.graphic-proj {
+  min-height: 82vh;
   overflow-y: auto;
   width: auto;
   padding: 1rem;

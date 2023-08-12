@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import WebDevProjects from './pages/WebDevProjects';
 import WebDevProjectDetails from './pages/WebDevProjectDetails';
+import GraphicDesignProjects from './pages/GraphicDesignProjects';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
             <Route exact path='/' element={<Home />} />
             <Route path='/projects/web-development' element={<WebDevProjects />} />
             <Route path='/projects/web-development/:id' element={<WebDevProjectDetails />} />
+            <Route path='/projects/graphic-design' element={<GraphicDesignProjects />} />
           </Routes>
           <Footer />
       </Router>

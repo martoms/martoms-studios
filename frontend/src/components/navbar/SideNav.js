@@ -8,13 +8,20 @@ const SideNav = () => {
                 <div id="mySidenav" className="sidenav">
                     <Link className="sidenav-btn" to="/">Home</Link>
                     <hr />
-                    <p className="sidenav-btn">Web Development</p>
-                    <Link className="sidenav-btn" to="/projects/web-development">Projects</Link>
-                    <Link className="sidenav-btn" to="/projects/graphic-design">Skills</Link>
+                    <div className="navgroups">
+                        <p className="sidenav-btn">Web Development</p>
+                        <Link className="sidenav-btn" to="/projects/web-development">Projects</Link>
+                        <Link className="sidenav-btn" to="/skills/web-development">Skills</Link>
+                    </div>
                     <hr />
-                    <p className="sidenav-btn">Skills</p>
-                    <Link className="sidenav-btn" to="/">About Me</Link>
-                    <Link className="sidenav-btn" to="/">Contact</Link>
+                    <div className="navgroups">
+                        <p className="sidenav-btn">Graphic Design</p>
+                        <Link className="sidenav-btn" to="/projects/graphic-design">Projects</Link>
+                        <Link className="sidenav-btn" to="/skills/graphic-design">Skills</Link>
+                    </div>
+                    <hr />
+                    <Link className="sidenav-btn" to="/about">About Me</Link>
+                    <Link className="sidenav-btn" to="/contact">Contact</Link>
                 </div>
             </div>
         </div>

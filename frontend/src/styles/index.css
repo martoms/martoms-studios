@@ -70,7 +70,8 @@ html, body {
   box-shadow: 0px 0px 8px white;
 }
 
-.sidenav a {
+.sidenav a,
+.sidenav p {
   padding: 0 8px 0 16px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -80,10 +81,9 @@ html, body {
   margin: 1rem;
 }
 
-.sidenav p {
-  text-align: center;
+.navgroups a {
   color: var(--txt4) !important;
-  margin-left: 0 !important;
+  margin-left: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -209,14 +209,6 @@ button:focus{outline: none;}
   border: solid 2px white !important;
 	width: 90%;
 	margin: 1rem 0 1rem 0.9rem;
-}
-
-/* == paragraph */
-#mySidenav p {
-  color: var(--btn1);
-  font-size: 1rem;
-  font-weight: 500;
-  margin-left: 2rem;
 }
 
 /* == navbar width */
@@ -544,10 +536,6 @@ div.skill-bg h4 img {
 
 div.skill-bg h6 {
   margin-bottom: 0;
-}
-
-div.skill-bg h6 + p {
-
 }
 
 div.skill-links {

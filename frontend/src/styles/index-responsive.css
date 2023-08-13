@@ -1,0 +1,62 @@
+/* TABLET */
+@media (min-width: 768px) {
+    
+    /* Main Navbar Items */
+    .nav-item a, .nav-item a:visited, .nav-item a:active {
+        /* color: white; */
+        text-decoration: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1.7vw;
+        text-shadow: 0 0 3px black;
+    }
+
+    /* Dropdown Starts */
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .nav-item a:hover {
+        filter: drop-shadow(0 0 5px var(--btn1));
+        text-shadow: none;
+    }
+
+    .dropdown > a::after {
+        content: url('../images/dropdown-nav.svg');
+        padding-left: 5px;
+        filter: drop-shadow(0 0 3px black);
+    }
+
+    .dropdown-content {
+        display: none;
+        z-index: 2;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(20px) !important;
+        border-radius: 10px;
+        width: 15vw
+    }
+
+    .dropdown-content a {
+        text-align: left;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1.8vw;
+        text-shadow: 0 0 3px black;
+    }
+
+    .dropdown-content a:not(:last-child) {
+        padding-bottom: 0;
+    }
+
+    /* Dropdown Ends */
+}

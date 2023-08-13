@@ -2,6 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 // Internal Modular CSS
 import './styles/index.css';
+import './styles/index-responsive.css';
 import './styles/projects.css';
 import './styles/aboutme.css';
 import './styles/admin.css';

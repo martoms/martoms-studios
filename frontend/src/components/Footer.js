@@ -1,4 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import github from '../images/f-github.svg'
+import linkedin from '../images/f-linkedin.svg'
+import upwork from '../images/f-upwork.svg'
+import phone from '../images/f-phone.svg'
+import email from '../images/f-email.svg'
 
 const Footer = () => {
 
@@ -10,38 +15,40 @@ const Footer = () => {
                 <div className="col-12 col-md-6">
                     <div className="row">
                         <div className="col-12 col-lg-6 travel-plans">
-                            <h4>Travel Plans</h4>
-                            <Link to='/bookings/with-guests'>
-                                <p>With Guests</p>
+                            <h4>Sitemap</h4>
+                            <Link to='/projects/web-development'>
+                                <p>Web-Dev Projects</p>
                             </Link>
-                            <Link to='/bookings/with-friends'>
-                                <p>With Friends</p>
+                            <Link to='/skills/web-development'>
+                                <p>Web-Dev Skills</p>
                             </Link>
-                            <Link to='/bookings/solo'>
-                                <p>Solo</p>
+                            <Link to='/projects/graphic-design'>
+                                <p>Graphic Design Projects</p>
+                            </Link>
+                            <Link to='/skills/graphic-design'>
+                                <p>Graphic Design Skills</p>
+                            </Link>
+                            <Link to='/about'>
+                                <p>About Me</p>
+                            </Link>
+                            <Link to='/contact'>
+                                <p>Contact</p>
                             </Link>
                         </div>
                         <div className="col-12 col-lg-6 links">
                             <h4>Links</h4>
-                            <Link to="https://github.com/martoms" target="_blank"><p><img src="/images/f-github.svg" alt="github" />GitHub</p></Link>
-                            <Link to="https://www.linkedin.com/in/m-tomatao/" target="_blank"><p><img src="/images/f-linkedin.svg" alt="linkedin" />LinkedIn</p></Link>
-                            <Link to="https://www.upwork.com/freelancers/~010e1495f770d6ef34" target="_blank"><p><img src="/images/f-upwork.svg" alt="upwork" />Upwork</p></Link>
+                            <Link to="https://github.com/martoms" target="_blank"><p><img src={github} alt="github" />GitHub</p></Link>
+                            <Link to="https://www.linkedin.com/in/m-tomatao/" target="_blank"><p><img src={linkedin} alt="linkedin" />LinkedIn</p></Link>
+                            <Link to="https://www.upwork.com/freelancers/~010e1495f770d6ef34" target="_blank"><p><img src={upwork} alt="upwork" />Upwork</p></Link>
                         </div>
                     </div>
                 </div>
                 <div className="col-12 col-md-6">
                     <div className="row">
-                        <div className="col-12 col-lg-5 resources">
-                            <h4>Resources</h4>
-                            <Link to="https://unsplash.com/" target="_blank"><p>unsplash.com</p></Link>
-                            <Link to="https://www.freepik.com/" target="_blank"><p>freepik.com</p></Link>
-                            <Link to="https://www.facebook.com/jrdetravel" target="_blank"><p>JRDE Travel & Tours</p></Link>
-                            <Link to="https://www.facebook.com/klikktravelexpress" target="_blank"><p>Klikk Travel Express</p></Link>
-                        </div>
                         <div className="col-12 col-lg-7 contacts">
                             <h4>Contacts</h4>
-                            <p><img src="/images/f-phone.svg" alt="phone" />+639991130968</p>
-                            <p><img src="/images/f-email.svg" alt="phone" />tomataomarjohn@gmail.com</p>
+                            <p><img src={phone} alt="phone" />+639991130968</p>
+                            <a href="mailto:tomataomarjohn@gmail.com"><p><img src={email} alt="email" />tomataomarjohn@gmail.com</p></a>
                         </div>
                     </div>
                 </div>

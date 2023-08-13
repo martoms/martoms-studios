@@ -468,7 +468,7 @@ div#contact-page h1 {
   font-size: 2.5rem;
 }
 
-div#contact-page > div:first-child p {
+p.contact-spiel {
   text-align: right;
   padding-left: 4rem;
   font-size: 1.2rem;

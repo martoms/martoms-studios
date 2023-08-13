@@ -189,3 +189,11 @@ div.desclaimer p {
 
     
 }
+
+/* [DESKTOP] */
+@media (min-width: 1200px) {
+
+    div.project-description {
+        padding: 5rem;
+    }
+}

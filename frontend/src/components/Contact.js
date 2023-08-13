@@ -19,14 +19,18 @@ const Contact = () => {
 
     return (
         <div className='contact'>
-            <h2>Let's Work Together!</h2>
+            <div className="clearfix">
+                <h2>Let's Work Together!</h2>
+            </div>
             <div className="contact-option">
                 <hr />
                 <p>email me</p>
             </div>
-            <a href="mailto:tomataomarjohn@gmail.com">
-                <p className="my-email">tomataomarjohn@gmail.com</p>
-            </a>
+            <div className="clearfix">
+                <a href="mailto:tomataomarjohn@gmail.com">
+                    <p className="my-email">tomataomarjohn@gmail.com</p>
+                </a>
+            </div>
             <div className="contact-option">
                 <hr />
                 <p>or leave a message</p>

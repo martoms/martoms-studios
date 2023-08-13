@@ -12,6 +12,7 @@ import GraphicDesignProjectDetails from './pages/GraphicDesignProjectDetails';
 import AboutMe from './pages/AboutMe';
 import AllMessages from './pages/AllMessages';
 import OpenMessage from './pages/OpenMessage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
             <Route path='/projects/graphic-design' element={<GraphicDesignProjects />} />
             <Route path='/projects/graphic-design/:category' element={<GraphicDesignProjectDetails />} />
             <Route path='/about' element={<AboutMe />} />
+            <Route path='/contact' element={<ContactPage />} />
             <Route path='/admin' element={<AllMessages />} />
             <Route path='/admin/:id' element={<OpenMessage />} />
           </Routes>

@@ -288,7 +288,8 @@ div.self-intro,
 div.skills,
 div#projects,
 div.dev-project-details,
-div#about-me {
+div#about-me,
+div#contact-page {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
@@ -449,11 +450,38 @@ div.prefooter {
 
 /* GENERAL STYLING */
 
+/* Contact Page Start */
+
+div#contact-page > div:first-child {
+  height: 30vh;
+}
+
+div#contact-page h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+div#contact-page > div:first-child p {
+  text-align: right;
+  padding-left: 4rem;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+/* Contact Page End */
+
+div.contact-component {
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
+
 div.contact {
   background-color: hsl(0, 0%, 10%);
   color: var(--txt4);
   margin: 0 -1.5rem;
-  padding: 1.5rem;
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
 }
 
 p.my-email {
@@ -494,7 +522,7 @@ input {
 
 div.form-btns {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 form button {
@@ -504,6 +532,7 @@ form button {
 .pointer {
   cursor: pointer;
 }
+
 
 /* The pulse animation */
 @keyframes pulse {

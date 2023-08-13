@@ -15,7 +15,7 @@ const AboutMe = () => {
                 <h3>Graphic Designer</h3>
             </div>
             <p className='about-me-description'>
-                I am self-taught as a graphic designer since college and I am currently employed at Father Saturnino Urios University in Butuan City as a Graphic Designer and as a Strategic Communications Staff. I learned computer programming and earned a certificate in Full Stack Web Development at Zuitt Coding Bootcamp from May to August 2023. Moreover, during the said bootcamp, I earned two out of three major awards, namely the Capstones 2 & 3 which showcase my exceptional skills in creating a backend web server and a fullstack web app respectively. I am also open to offer my service as a fulltime web developer.
+                I am self-taught as a graphic designer since college and I am currently employed at Father Saturnino Urios University in Butuan City as a Graphic Designer and as a Strategic Communications Staff.<br /><br />I learned computer programming and earned a certificate in Full Stack Web Development at Zuitt Coding Bootcamp from May to August 2023. Moreover, during the said bootcamp, I earned two out of three major awards, namely the Capstones 2 & 3 which showcase my exceptional skills in creating a backend web server and a fullstack web app respectively.<br /><br />I am also open to offer my service as a fulltime web developer.
             </p>
             <hr />
             <div className='cert-btns'>

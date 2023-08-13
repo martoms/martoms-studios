@@ -66,6 +66,28 @@
     }
 
     /* Services Carousel Starts */
+
+    div.dev,
+    div.graphic,
+    div.project-list {
+        min-height: 73vh;
+        margin-bottom: 3rem;
+    }
+
+    div.project-list {
+        min-height: 60vh;
+        padding: 3rem;
+        margin-top: 2rem;
+        /* margin-bottom: 3rem; */
+    }
+
+    div.graphic-proj,
+    div.web-dev-proj {
+        min-height: 77vh;
+        margin-bottom: 3rem;
+        padding: 3rem;
+    }
+
     div.services,
     .services img {
         height: calc(100vh - 400px);
@@ -76,12 +98,27 @@
     div.self-intro,
     div.skills,
     div#projects,
-    div.dev-project-details,
     div#about-me,
     div#contact-page,
     div#webdev-skills,
     div#graphic-skills {
         padding: 1.5rem 3rem 0 3rem;
+    }
+
+    div.dev-project-details {
+        padding: 1.5rem 3rem 1rem 3rem;
+    }
+
+    .self-intro h1,
+    div.skills h1,
+    div#projects h1,
+    div.dev-project-details h1,
+    div#about-me h1,
+    div.contact h2,
+    #all-messages h1,
+    div#webdev-skills h1,
+    div#graphic-skills h1 {
+        margin-top: 2.5rem;
     }
 
     div.self-intro {
@@ -142,5 +179,30 @@
 
     div.prefooter {
         padding: 2rem;
+    }
+
+    /* Skills Page Start */
+
+    div.skill-info {
+        margin: 3rem 0;
+        display: flex;
+    }
+
+    div.skill-description {
+        width: 60%;
+    }
+
+    div.skill-certs {
+        width: 40%;
+    }
+
+    div.skill-links + p {
+        padding: 0 2rem;
+    }
+
+    /* Skills Page End */
+
+    div#contact-page .contact {
+        margin: 0 -3rem;
     }
 }

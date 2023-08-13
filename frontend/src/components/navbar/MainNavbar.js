@@ -38,10 +38,10 @@ const MainNavbar = () => {
                     </div>
                 </li>
                 <li className="nav-item">
-                    <Link to="/about">About Me</Link>
+                    <Link to="/about">About</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/contact">Contact Me</Link>
+                    <Link to="/contact">Contact</Link>
                 </li>
             </ul>
             </div>

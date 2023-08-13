@@ -151,3 +151,41 @@ div.desclaimer p {
 }
 
 /* Project Details End */
+
+/* [TABLET] */
+@media (min-width: 768px) {
+
+    div.web-dev-proj,
+    div.graphic-proj {
+        max-height: 70vh !important;
+    }
+
+    div.project-description {
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
+
+    div.project-info {
+        margin: 3rem 0;
+        display: flex;
+    }
+
+    div.project-header {
+        width: 70%;
+    }
+
+    div.project-links {
+        width: 30%;
+    }
+
+    div.project-header h1 {
+        margin-top: 0;
+    }
+
+    div.project-links a {
+        /* margin: 0 auto; */
+        width: 200px;
+    }
+
+    
+}

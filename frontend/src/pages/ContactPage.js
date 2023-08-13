@@ -7,7 +7,7 @@ const ContactPage = () => {
                 <h1>Contact &</h1>
                 <h1>Collaborate</h1>
                 <p>
-                Let's bring your ideas to life, both in code and design. Reach out today!
+                Let's bring your ideas to life,<br />both in code and design.<br />Reach out today!
                 </p>
             </div>
             <Contact />

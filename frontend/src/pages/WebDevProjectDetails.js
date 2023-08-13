@@ -44,22 +44,26 @@ const WebDevProjectDetails = () => {
                     </Breadcrumb.Item>
                     <Breadcrumb.Item active>{ project }</Breadcrumb.Item>
                 </Breadcrumb>
-                <h1>{ project }</h1>
-                <h6>{ subtitle }</h6>
-                <div className="project-dates">
-                    <p>
-                        Start created on: 
-                        <span> { createdOn }</span>
-                    </p>
-                    <p>
-                        Latest version: 
-                        <span> { lastUpdated }</span>
-                    </p>
-                </div>
-                <hr />
-                <div className="project-links">
-                    <Button as={Link} to={url} target="_blank">View Project</Button>
-                    <Button as={Link} to={repository.url} target="_blank">{`View Code on ${repository.platform}`}</Button>
+                <div className="project-info">
+                    <div className="project-header">
+                        <h1>{ project }</h1>
+                        <h6>{ subtitle }</h6>
+                        <div className="project-dates">
+                            <p>
+                                Start created on: 
+                                <span> { createdOn }</span>
+                            </p>
+                            <p>
+                                Latest version: 
+                                <span> { lastUpdated }</span>
+                            </p>
+                        </div>
+                        <hr className="d-md-none" />
+                    </div>
+                    <div className="project-links">
+                        <Button as={Link} to={url} target="_blank">View Project</Button>
+                        <Button as={Link} to={repository.url} target="_blank">{`View Code on ${repository.platform}`}</Button>
+                    </div>
                 </div>
                 <div className="project-description">
                     <p>

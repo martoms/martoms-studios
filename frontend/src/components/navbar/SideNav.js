@@ -20,7 +20,7 @@ const SideNav = () => {
                         <Link className="sidenav-btn" to="/skills/graphic-design">Skills</Link>
                     </div>
                     <hr />
-                    <Link className="sidenav-btn" to="/about">About Me</Link>
+                    <Link className="sidenav-btn" to="/about">About</Link>
                     <Link className="sidenav-btn" to="/contact">Contact</Link>
                 </div>
             </div>

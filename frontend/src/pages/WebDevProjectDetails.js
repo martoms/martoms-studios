@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import useFormatDate from "../hooks/useFormatDate";
-import { Button } from "react-bootstrap";
+import { Button, Breadcrumb } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Fragment } from "react";
 
@@ -37,6 +37,13 @@ const WebDevProjectDetails = () => {
         
         return ( 
             <div className="dev-project-details">
+                <Breadcrumb>
+                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/projects/web-development">
+                        Projects
+                    </Breadcrumb.Item>
+                    <Breadcrumb.Item active>{ project }</Breadcrumb.Item>
+                </Breadcrumb>
                 <h1>{ project }</h1>
                 <h6>{ subtitle }</h6>
                 <div className="project-dates">

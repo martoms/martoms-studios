@@ -1,7 +1,7 @@
 import useFetch from "../hooks/useFetch";
 import { useContext } from "react";
 import { AllContext } from "../contexts/AllContexts";
-import { Button } from "react-bootstrap";
+import { Button, Breadcrumb } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import placeholder from '../images/placeholder.webp'
 
@@ -28,6 +28,10 @@ const GraphicDesignProjects = () => {
         
         return (
             <div id="projects">
+                <Breadcrumb>
+                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Projects</Breadcrumb.Item>
+                </Breadcrumb>
                 <h1>Projects</h1>
                 <h3>Graphic Design</h3>
                 <div className="graphic-proj">

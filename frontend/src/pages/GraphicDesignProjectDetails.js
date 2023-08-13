@@ -3,6 +3,7 @@ import useFetch from "../hooks/useFetch";
 import useFormatDate from "../hooks/useFormatDate";
 import { Fragment, useState } from "react";
 import placeholder from '../images/placeholder.webp'
+import { Breadcrumb } from "react-bootstrap";
 
 const GraphicDesignProjectDetails = () => {
 
@@ -80,6 +81,13 @@ const GraphicDesignProjectDetails = () => {
 
         return ( 
             <div className="dev-project-details">
+                <Breadcrumb>
+                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/projects/graphic-design">
+                        Projects
+                    </Breadcrumb.Item>
+                    <Breadcrumb.Item active>{ category }</Breadcrumb.Item>
+                </Breadcrumb>
                 <h1>{ category }</h1>
                 {
                     showDisclaimer &&

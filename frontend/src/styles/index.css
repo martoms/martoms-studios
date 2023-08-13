@@ -73,10 +73,18 @@ html, body {
 .sidenav a {
   padding: 0 8px 0 16px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 1.2rem;
+  color: var(--txt4);
   display: block;
   transition: 0.3s;
+  margin: 1rem;
+}
+
+.sidenav p {
+  text-align: center;
+  color: var(--txt4) !important;
+  margin-left: 0 !important;
+  text-transform: uppercase;
 }
 
 .sidenav a:hover {
@@ -289,7 +297,9 @@ div.skills,
 div#projects,
 div.dev-project-details,
 div#about-me,
-div#contact-page {
+div#contact-page,
+div#webdev-skills,
+div#graphic-skills {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
@@ -299,7 +309,9 @@ div#projects h1,
 div.dev-project-details h1,
 div#about-me h1,
 div.contact h2,
-#all-messages h1 {
+#all-messages h1,
+div#webdev-skills h1,
+div#graphic-skills h1 {
   font-weight: 900;
 }
 
@@ -515,6 +527,48 @@ div.contact-option p {
   margin: 0 auto;
   width: 40%;
 }
+
+/* Skills Page Start */
+
+div.skill-bg h4 {
+  font-weight: 700;
+  margin-bottom: 0;
+  color: black;
+}
+
+div.skill-bg h4 img {
+  height: 20px;
+  width: auto;
+  margin-right: 5px;
+}
+
+div.skill-bg h6 {
+  margin-bottom: 0;
+}
+
+div.skill-bg h6 + p {
+
+}
+
+div.skill-links {
+  display: flex;
+  flex-direction: column;
+}
+
+div.skill-links a {
+  width: 80%;
+  margin: 5px auto;
+}
+
+div.skill-links + p {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8rem;
+  padding: 0 5rem;
+  line-height: 0.8rem;
+}
+
+/* Skills Page End */
 
 input {
   margin-bottom: 10px;

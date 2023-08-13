@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+
+    const year = new Date(Date.now()).toLocaleString('en-US', { year: 'numeric' })
+
     return ( 
         <>
             <div className="row prefooter">
@@ -48,7 +51,7 @@ const Footer = () => {
             <footer>
                 <p>martoms_studios</p>
                 <p>Marjohn Tomatao | Full Stack Web Developer | MERN Stack</p>
-                <p>Copyright &copy; 2023. All Rights Reserved</p>
+                <p>Copyright &copy; { year }. All Rights Reserved</p>
                 <hr />
             </footer>
         </>

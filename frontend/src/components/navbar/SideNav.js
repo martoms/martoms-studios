@@ -7,8 +7,12 @@ const SideNav = () => {
             <div className="col-1 d-md-none d-flex justify-content-center">
                 <div id="mySidenav" className="sidenav">
                     <Link className="sidenav-btn" to="/">Home</Link>
-                    <Link className="sidenav-btn" to="/">Projects</Link>
-                    <Link className="sidenav-btn" to="/">Tools</Link>
+                    <hr />
+                    <p className="sidenav-btn">Web Development</p>
+                    <Link className="sidenav-btn" to="/projects/web-development">Projects</Link>
+                    <Link className="sidenav-btn" to="/projects/graphic-design">Skills</Link>
+                    <hr />
+                    <p className="sidenav-btn">Skills</p>
                     <Link className="sidenav-btn" to="/">About Me</Link>
                     <Link className="sidenav-btn" to="/">Contact</Link>
                 </div>

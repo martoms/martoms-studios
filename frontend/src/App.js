@@ -13,6 +13,8 @@ import AboutMe from './pages/AboutMe';
 import AllMessages from './pages/AllMessages';
 import OpenMessage from './pages/OpenMessage';
 import ContactPage from './pages/ContactPage';
+import WebDevSkills from './pages/WebDevSkills';
+import GraphicDesignSkills from './pages/GraphicDesignSkills';
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
             <Route path='/projects/web-development/:id' element={<WebDevProjectDetails />} />
             <Route path='/projects/graphic-design' element={<GraphicDesignProjects />} />
             <Route path='/projects/graphic-design/:category' element={<GraphicDesignProjectDetails />} />
+            <Route path='/skills/web-development' element={<WebDevSkills />} />
+            <Route path='/skills/graphic-design' element={<GraphicDesignSkills />} />
             <Route path='/about' element={<AboutMe />} />
             <Route path='/contact' element={<ContactPage />} />
             <Route path='/admin' element={<AllMessages />} />

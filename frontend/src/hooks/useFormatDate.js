@@ -4,6 +4,10 @@ const useFormatDate = () => {
         return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     };
 
+    const readableDateAndTime = (date) => {
+        return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric' });
+    };
+
     const timePassed = (date) => {
 
         const today = Date.now()
@@ -36,7 +40,7 @@ const useFormatDate = () => {
         }
     };
 
-    return { readableDate, timePassed };
+    return { readableDate, readableDateAndTime, timePassed };
 }
  
 export default useFormatDate;

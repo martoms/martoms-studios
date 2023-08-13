@@ -6,7 +6,7 @@ const OpenMessage = () => {
 
     const { id } = useParams();
     const { details } = useFetch(`${process.env.REACT_APP_API_URL}/contacts/${id}`)
-    const { readableDate } = useFormatDate();
+    const { readableDateAndTime } = useFormatDate();
 
     if (details) {
         
@@ -18,7 +18,7 @@ const OpenMessage = () => {
             contactDate
         } = details;
 
-        const date = readableDate(contactDate);
+        const date = readableDateAndTime(contactDate);
 
         return (
             <div id="open-message">

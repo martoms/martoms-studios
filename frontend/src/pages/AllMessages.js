@@ -21,7 +21,7 @@ const AllMessages = () => {
         adminLogin,
         formData
     } = useHandleForm(initialFormState);
-    const { readableDate } = useFormatDate()
+    const { readableDateAndTime } = useFormatDate()
     const token = localStorage.getItem('token');
 
     let messageList;
@@ -34,7 +34,7 @@ const AllMessages = () => {
                 contactDate
             } = message;
 
-            const date = readableDate(contactDate);
+            const date = readableDateAndTime(contactDate);
 
             return (
                 <Button key={_id} className="pointer" as={Link} to={`/admin/${_id}`}>

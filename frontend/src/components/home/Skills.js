@@ -1,5 +1,5 @@
 import useFetch from "../../hooks/useFetch";
-import { useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { AllContext } from "../../contexts/AllContexts";
 import placeholder from '../../images/placeholder.webp'
 
@@ -7,6 +7,23 @@ const Skills = () => {
 
     useFetch(`${process.env.REACT_APP_API_URL}/skills`, 'SET_SKILLS');
     const { skills } = useContext(AllContext);
+    const [webDev, setWebDev] = useState(false);
+    const [graphic, setGraphic] = useState(false);
+
+    useEffect(() => {
+        const webDevPage = document.getElementById('webdev-skills');
+        const graphicPage = document.getElementById('graphic-skills');
+
+        if (webDevPage) {
+            setWebDev(true);
+            setGraphic(false);
+        }
+        if (graphicPage) {
+            setGraphic(true);
+            setWebDev(false);
+        }
+
+    }, [webDev, graphic])
 
     if (skills) {
 
@@ -108,61 +125,149 @@ const Skills = () => {
         
         return ( 
             <div className="skills">
-                <h1>Skills</h1>
-                <div className="dev">
-                    <h3>Web Development</h3>
-                    <hr />
-                    <div>
+                {
+                    webDev || graphic ?
+                    <></>
+                    :
+                    <>
+                    <h1>Skills</h1>
+                    <div className="dev">
+                        {
+                            webDev || graphic ?
+                            <></>
+                            :
+                            <>
+                            <h3>Web Development</h3>
+                            <hr />
+                            </>
+                        }
                         <div>
-                            <h2>Languages</h2>
-                            <div className="skills-list">
-                                { languagesList }
+                            <div>
+                                <h2>Languages</h2>
+                                <div className="skills-list">
+                                    { languagesList }
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h2>Frameworks</h2>
-                            <div className="skills-list">
-                                { frameworksList }
+                            <div>
+                                <h2>Frameworks</h2>
+                                <div className="skills-list">
+                                    { frameworksList }
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h2>Tools</h2>
-                            <div className="skills-list">
-                                { devToolsList }
+                            <div>
+                                <h2>Tools</h2>
+                                <div className="skills-list">
+                                    { devToolsList }
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h2>Databases</h2>
-                            <div className="skills-list">
-                                { databasesList }
+                            <div>
+                                <h2>Databases</h2>
+                                <div className="skills-list">
+                                    { databasesList }
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h2>Others</h2>
-                            <div className="other-skills">
-                                { devOthersList }
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="graphic">
-                    <h3>Graphic Design</h3>
-                    <hr />
-                    <div>
-                        <div>
-                            <h2>Category</h2>
-                            <div className="skills-list">
-                                { categoriesList }
-                            </div>
-                        </div>
-                        <div>
-                            <h2>Tools</h2>
-                            <div className="skills-list">
-                                { graphicToolsList }
+                            <div>
+                                <h2>Others</h2>
+                                <div className="other-skills">
+                                    { devOthersList }
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div className="graphic">
+                        <h3>Graphic Design</h3>
+                        <hr />
+                        <div>
+                            <div>
+                                <h2>Category</h2>
+                                <div className="skills-list">
+                                    { categoriesList }
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Tools</h2>
+                                <div className="skills-list">
+                                    { graphicToolsList }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </>
+                }
+                {
+                    webDev &&
+                    <div className="dev">
+                        {
+                            webDev || graphic ?
+                            <></>
+                            :
+                            <>
+                            <h3>Web Development</h3>
+                            <hr />
+                            </>
+                        }
+                        <div>
+                            <div>
+                                <h2>Languages</h2>
+                                <div className="skills-list">
+                                    { languagesList }
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Frameworks</h2>
+                                <div className="skills-list">
+                                    { frameworksList }
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Tools</h2>
+                                <div className="skills-list">
+                                    { devToolsList }
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Databases</h2>
+                                <div className="skills-list">
+                                    { databasesList }
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Others</h2>
+                                <div className="other-skills">
+                                    { devOthersList }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                {
+                    graphic &&
+                    <div className="graphic">
+                        {
+                            webDev || graphic ?
+                            <></>
+                            :
+                            <>
+                            <h3>Graphic Design</h3>
+                            <hr />
+                            </>
+                        }
+                        <div>
+                            <div>
+                                <h2>Category</h2>
+                                <div className="skills-list">
+                                    { categoriesList }
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Tools</h2>
+                                <div className="skills-list">
+                                    { graphicToolsList }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
         );
     };

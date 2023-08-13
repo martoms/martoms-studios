@@ -59,4 +59,88 @@
     }
 
     /* Dropdown Ends */
+
+    /* Main Logo */
+    #main-logo {
+        width: 20%;
+    }
+
+    /* Services Carousel Starts */
+    div.services,
+    .services img {
+        height: calc(100vh - 400px);
+    }
+
+    /* Self Intro and Skills Start */
+
+    div.self-intro,
+    div.skills,
+    div#projects,
+    div.dev-project-details,
+    div#about-me,
+    div#contact-page,
+    div#webdev-skills,
+    div#graphic-skills {
+        padding: 1.5rem 3rem 0 3rem;
+    }
+
+    div.self-intro {
+        display: flex;
+    }
+
+    .self-intro-pic {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .self-intro-pic,
+    .self-intro-description {
+        width: 50%;
+        height: 300px;
+    }
+
+    .self-intro-pic img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    div.skills-list {
+        justify-content: space-evenly;
+    }
+
+    div.skills-list > div {
+        width: 33.33%;
+    }
+
+    div.skills-list p {
+        padding: 0 3rem;
+    }
+
+    /* Self Intro and Skills End */
+
+    /* GENERAL STYLING */
+
+    div.contact {
+        padding: 3rem;
+    }
+
+    div.contact h2 {
+        /* margin-left: 10rem; */
+        text-align: center;
+    }
+
+    div.contact-option {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    div.contact form {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    div.prefooter {
+        padding: 2rem;
+    }
 }

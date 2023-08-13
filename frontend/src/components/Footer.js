@@ -12,9 +12,9 @@ const Footer = () => {
     return ( 
         <>
         <div className="row prefooter">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-5">
                 <div className="row">
-                    <div className="col-12 col-lg-6 travel-plans">
+                    <div className="col-12 travel-plans">
                         <h4>Sitemap</h4>
                         <Link to='/projects/web-development'>
                             <p>Web-Dev Projects</p>
@@ -35,7 +35,11 @@ const Footer = () => {
                             <p>Contact</p>
                         </Link>
                     </div>
-                    <div className="col-12 col-lg-6 links">
+                </div>
+            </div>
+            <div className="col-12 col-md-2">
+                <div className='row'>
+                    <div className="col-12 links">
                         <h4>Links</h4>
                         <Link to="https://github.com/martoms" target="_blank"><p><img src={github} alt="github" />GitHub</p></Link>
                         <Link to="https://www.linkedin.com/in/m-tomatao/" target="_blank"><p><img src={linkedin} alt="linkedin" />LinkedIn</p></Link>
@@ -43,7 +47,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-5">
                 <div className="row">
                     <div className="col-12 col-lg-7 contacts">
                         <h4>Contacts</h4>

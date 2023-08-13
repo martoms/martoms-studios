@@ -1,7 +1,14 @@
 import useFetch from "../../hooks/useFetch";
 import { useState, useEffect, useContext } from "react";
 import { AllContext } from "../../contexts/AllContexts";
-import placeholder from '../../images/placeholder.webp'
+import {
+    LanguagesListImg,
+    FrameworksListImg,
+    DevToolsListImg,
+    DatabaseListImg,
+    CategoriesListImg,
+    GraphicToolsListImg
+} from "../ComponentImages";
 
 const Skills = () => {
 
@@ -34,10 +41,12 @@ const Skills = () => {
         // LANGUAGES
         const languagesList = devSkills.languages.map((language, i) => {
             
+
+
             return (
                 <div key={i}>
                     <div className="skill-icon">
-                        <img src={placeholder} alt="placeholder" />
+                        <LanguagesListImg language={language} />
                     </div>
                     <p>{ language }</p>
                 </div>
@@ -50,7 +59,7 @@ const Skills = () => {
             return (
                 <div key={i}>
                     <div className="skill-icon">
-                        <img src={placeholder} alt="placeholder" />
+                       <FrameworksListImg framework={framework} />
                     </div>
                     <p>{ framework }</p>
                 </div>
@@ -63,7 +72,7 @@ const Skills = () => {
             return (
                 <div key={i}>
                     <div className="skill-icon">
-                        <img src={placeholder} alt="placeholder" />
+                        <DevToolsListImg tool={tool} />
                     </div>
                     <p>{ tool }</p>
                 </div>
@@ -76,7 +85,7 @@ const Skills = () => {
             return (
                 <div key={i}>
                     <div className="skill-icon">
-                        <img src={placeholder} alt="placeholder" />
+                        <DatabaseListImg database={database} />
                     </div>
                     <p>{ database }</p>
                 </div>
@@ -98,14 +107,14 @@ const Skills = () => {
         const graphicSkills = skills[0].graphic;
 
         // CATEGORIES
-        const categoriesList = graphicSkills.genre.map((skill, i) => {
+        const categoriesList = graphicSkills.genre.map((category, i) => {
             
             return (
                 <div key={i}>
                     <div className="skill-icon">
-                        <img src={placeholder} alt="placeholder" />
+                       <CategoriesListImg category={category} />
                     </div>
-                    <p>{ skill }</p>
+                    <p>{ category }</p>
                 </div>
             )
         });
@@ -116,7 +125,7 @@ const Skills = () => {
             return (
                 <div key={i}>
                     <div className="skill-icon">
-                        <img src={placeholder} alt="placeholder" />
+                        <GraphicToolsListImg tool={tool} />
                     </div>
                     <p>{ tool }</p>
                 </div>

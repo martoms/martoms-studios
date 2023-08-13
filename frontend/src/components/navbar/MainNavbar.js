@@ -1,6 +1,5 @@
 import { Navbar } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import navLogo from '../../images/ms-logo.svg';
 
 const MainNavbar = () => {

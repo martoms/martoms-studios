@@ -1,3 +1,4 @@
+import profilepic from '../../images/profilepic.webp'
 import placeholder from '../../images/placeholder.webp'
 
 const SelfIntro = () => {
@@ -14,7 +15,10 @@ const SelfIntro = () => {
                 </p>
             </div>
             <div className='self-intro-pic'>
-                <img src={placeholder} alt="placeholder" />
+                {
+                    <img src={profilepic} alt="profilepic" /> ||
+                    <img src={placeholder} alt="placeholder" />
+                }
             </div>
         </div>
     );

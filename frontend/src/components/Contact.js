@@ -1,5 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import useHandleForm from "../hooks/useHandleForm";
+import stroke from '../images/stroke.svg';
 
 const Contact = () => {
 
@@ -19,6 +20,7 @@ const Contact = () => {
 
     return (
         <div className='contact'>
+            <img className="contact-art d-none d-lg-inline-block" src={stroke} alt="stroke" />
             <div className="clearfix">
                 <h2>Let's Work Together!</h2>
             </div>

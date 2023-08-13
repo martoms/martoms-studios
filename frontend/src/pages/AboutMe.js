@@ -1,3 +1,4 @@
+import profilepic from '../images/profilepic.webp'
 import placeholder from '../images/placeholder.webp'
 import { Button, Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -12,7 +13,10 @@ const AboutMe = () => {
             </Breadcrumb>
             <div className='about-me-content'>
                 <div className='about-me-pic'>
-                    <img src={placeholder} alt="placeholder" />
+                    {
+                        <img src={profilepic} alt="profilepic" /> ||
+                        <img src={placeholder} alt="placeholder" />
+                    }
                     <div className='d-none d-lg-block'>
                         <hr />
                         <div className='cert-btns'>

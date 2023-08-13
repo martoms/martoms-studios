@@ -5,7 +5,7 @@ import navLogo from '../../images/ms-logo.svg';
 
 const MobileNav = () => {
     return ( 
-        <Navbar id="navbar" className="navbar d-md-none sticky-top" bg='dark'>
+        <Navbar id="navbar" className="navbar d-md-none sticky-top" bg='light'>
             {/* Collapse button */}
             <button className="navbar-toggler hamburger-button" type="button" onClick={NavToggle} style={{ zIndex: 10 }}>
                 <div className="animated-icon">

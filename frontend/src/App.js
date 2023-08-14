@@ -15,12 +15,14 @@ import OpenMessage from './pages/OpenMessage';
 import ContactPage from './pages/ContactPage';
 import WebDevSkills from './pages/WebDevSkills';
 import GraphicDesignSkills from './pages/GraphicDesignSkills';
+import Title from './components/Title';
 
 function App() {
 
   return (
       <Router>
           <Navbar/>
+          <Title />
           <Routes>
             <Route exact path='/' element={<Home />} />
             <Route path='/projects/web-development' element={<WebDevProjects />} />

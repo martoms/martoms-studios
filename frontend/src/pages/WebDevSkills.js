@@ -32,10 +32,10 @@ const WebDevSkills = () => {
                     <div className="skill-certs">
                         <p>View Certifications:</p>
                         <div className="skill-links">
-                            <Button as={Link} to='https://share.zertify.zuitt.co/certificate/20315512-5638-4257-bada-4ae0ff6e218a/' target="_blank">
+                            <Button as={Link} to='https://share.zertify.zuitt.co/certificate/0aecaa8d-e58d-440c-a911-a1152d4f1d03/' target="_blank">
                                 Front-End Course
                             </Button>
-                            <Button as={Link} to='https://share.zertify.zuitt.co/certificate/0aecaa8d-e58d-440c-a911-a1152d4f1d03/' target="_blank">
+                            <Button as={Link} to='https://share.zertify.zuitt.co/certificate/20315512-5638-4257-bada-4ae0ff6e218a/' target="_blank">
                                 Back-End Course
                             </Button>
                         </div>

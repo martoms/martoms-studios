@@ -7,6 +7,7 @@ import { Fragment } from "react";
 import capstone2 from '../images/capstone2.webp';
 import capstone3 from '../images/capstone3.webp';
 import Contact from "../components/Contact";
+import loading from '../images/loading.gif';
 
 const CertificateWithLinks = () => {
     const { certificate } = useParams();
@@ -104,6 +105,43 @@ const CertificateWithLinks = () => {
                         <ul>
                             { skillsList }
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <Contact />
+            </div>
+            </>
+        );
+    } else {
+        return (
+            <>
+            <div className="certificates">
+                <Breadcrumb>
+                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/skills/web-development">Skills</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Certificate</Breadcrumb.Item>
+                </Breadcrumb>
+                <div>
+                    {
+                        certificate === 'best-in-capstone-2' &&
+                        <img src={capstone2} alt="capstone 2" />
+                    }
+                    {
+                        certificate === 'best-in-capstone-3' &&
+                        <img src={capstone3} alt="capstone 3" />
+                    }
+                    <div className="verification">
+                        <p>
+                            For verification purposes, contact:
+                        </p>
+                        <a href="mailto:helpdesk@zuitt.co">helpdesk@zuitt.co</a>
+                    </div>
+                    <hr />
+                    <div className="project-info">
+                        <div className="loading" style={{margin: '0 auto'}}>
+                            <img src={loading} alt="loading" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,6 +249,43 @@ const CertificateWithLinksAboutPage = () => {
                         <ul>
                             { skillsList }
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <Contact />
+            </div>
+            </>
+        );
+    } else {
+        return (
+            <>
+            <div className="certificates">
+                <Breadcrumb>
+                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/about">About</Breadcrumb.Item>
+                    <Breadcrumb.Item active>Certificate</Breadcrumb.Item>
+                </Breadcrumb>
+                <div>
+                    {
+                        certificate === 'best-in-capstone-2' &&
+                        <img src={capstone2} alt="capstone 2" />
+                    }
+                    {
+                        certificate === 'best-in-capstone-3' &&
+                        <img src={capstone3} alt="capstone 3" />
+                    }
+                    <div className="verification">
+                        <p>
+                            For verification purposes, contact:
+                        </p>
+                        <a href="mailto:helpdesk@zuitt.co">helpdesk@zuitt.co</a>
+                    </div>
+                    <hr />
+                    <div className="project-info">
+                        <div className="loading" style={{margin: '0 auto'}}>
+                            <img src={loading} alt="loading" />
+                        </div>
                     </div>
                 </div>
             </div>

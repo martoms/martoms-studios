@@ -599,7 +599,7 @@ div.certificates > div {
   margin-bottom: 1rem;
 }
 
-div.certificates > div img {
+div.certificates > div > img {
   width: 100%;
   object-fit: cover;
   height: auto;

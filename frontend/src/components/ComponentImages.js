@@ -32,8 +32,29 @@ import ind from '../images/ind.svg'
 import lrc from '../images/lrc.svg'
 import xd from '../images/xd.svg'
 import figma from '../images/figma.svg'
+// [Graphic Design Projects]
+// Philippine Bamboo Month
+import bamboo1 from '../images/bamboo1.webp'
+import bamboo2 from '../images/bamboo2.webp'
+// BlueTernatea
+import blueternate from '../images/blueternate.webp'
+// Benny's Spooky Edit War 2022
+import composite1 from '../images/composite1.webp'
+import composite2 from '../images/composite2.webp'
+import composite3 from '../images/composite3.webp'
+import composite4 from '../images/composite4.webp'
+import composite5 from '../images/composite5.webp'
+// Tulay ng Vianney
+import pub1 from '../images/pub1.webp'
+// Product Editing Service
+import product from '../images/product.webp'
+// aiCerebrum 1.0
+import mockup1 from '../images/mockup1.webp'
+
+
 // Place Holder
 import placeholder from '../images/placeholder.webp'
+import { Carousel } from 'react-bootstrap'
 
 const LanguagesListImg = ({language}) => {
 
@@ -140,6 +161,53 @@ const GraphicToolsListImg = ({tool}) => {
             return (<img src={placeholder} alt="placeholder" />)
     }
 }
+
+const GraphicProjectsImg = ({title}) => {
+
+    switch (title) {
+        case 'Philippine Bamboo Month':
+            return (
+                <Carousel interval={3000}>
+                    <Carousel.Item>
+                        <img src={bamboo1} alt="bamboo1" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={bamboo2} alt="bamboo2" />
+                    </Carousel.Item>
+                </Carousel>
+            );
+        case 'BlueTernatea':
+            return (<img src={blueternate} alt="blueternate" />);
+        case 'Benny\'s Spooky Edit War 2022':
+            return (
+                <Carousel interval={3000}>
+                    <Carousel.Item>
+                        <img src={composite1} alt="composite1" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={composite2} alt="composite2" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={composite3} alt="composite3" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={composite4} alt="composite4" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={composite5} alt="composite5" />
+                    </Carousel.Item>
+                </Carousel>
+            );
+        case 'Tulay ng Vianney':
+            return (<img src={pub1} alt="pub1" />);
+        case 'Product Editing Service':
+            return (<img src={product} alt="product" />);
+        case 'aiCerebrum 1.0':
+            return (<img src={mockup1} alt="mockup1" />);
+        default:
+            return (<img src={placeholder} alt="placeholder" />)
+    }
+}
  
 export {
     LanguagesListImg,
@@ -147,5 +215,6 @@ export {
     DevToolsListImg,
     DatabaseListImg,
     CategoriesListImg,
-    GraphicToolsListImg
+    GraphicToolsListImg,
+    GraphicProjectsImg
 };

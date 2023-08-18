@@ -20,7 +20,7 @@ const GraphicDesignProjects = () => {
 
             return (
                 <Button key={_id} className="pointer" as={Link} to={`/projects/graphic-design/${slug}`}>
-                    <img src={placeholder} alt="placeholder" />
+                    {/* <img src={placeholder} alt="placeholder" /> */}
                     <h4>{ category }</h4>
                 </Button>
             )

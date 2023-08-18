@@ -603,6 +603,7 @@ div.certificates > div img {
   width: 100%;
   object-fit: cover;
   height: auto;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.596));
 }
 
 div.verification p {
@@ -628,7 +629,7 @@ div.certificates + div {
 
 .pointer:hover {
   background-color: white;
-  background-image: linear-gradient(to bottom right, #007bdf, #b4ff51);
+  background-image: linear-gradient(to right, #007bdf, #b4ff51);
 }
 
 input {
@@ -648,6 +649,11 @@ form button {
   cursor: pointer;
 }
 
+/* Graphic Design Projects Carousel Indicators */
+div.dev-project-details .carousel-control-prev-icon,
+div.dev-project-details .carousel-control-next-icon {
+  filter: drop-shadow(0 0 1px black) !important;
+}
 
 /* The pulse animation */
 @keyframes pulse {

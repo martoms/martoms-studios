@@ -2,8 +2,8 @@ import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import useFormatDate from "../hooks/useFormatDate";
 import { Fragment, useState } from "react";
-import placeholder from '../images/placeholder.webp'
 import { Breadcrumb } from "react-bootstrap";
+import { GraphicProjectsImg } from "../components/ComponentImages";
 
 const GraphicDesignProjectDetails = () => {
 
@@ -60,7 +60,7 @@ const GraphicDesignProjectDetails = () => {
                         </p>
                     </div>
                     <div className="project-images">
-                        <img src={placeholder} alt="placeholder" />
+                        <GraphicProjectsImg title={title} />
                     </div>
                     <p>
                         {description.split('\n').map((line, index) => (
@@ -92,7 +92,15 @@ const GraphicDesignProjectDetails = () => {
                 {
                     showDisclaimer &&
                     <div className="desclaimer">
-                        <span className="close-icon" onClick={handleDisclaimerClose}>&#x2716;</span>
+                        <span 
+                            className="close-icon" 
+                            onClick={handleDisclaimerClose}
+                            style={{
+                                cursor: 'pointer'
+                            }}
+                        >
+                            &#x2716;
+                        </span>
                         <p>
                             More projects in graphic designs will be featured in the future. For now, since the page is still in its early development, I can only feature at least one of each graphic design category due to time constraints. Please watch out for the updates. Cheers!
                         </p>

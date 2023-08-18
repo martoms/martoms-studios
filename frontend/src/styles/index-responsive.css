@@ -106,7 +106,8 @@
     div#about-me,
     div#contact-page,
     div#webdev-skills,
-    div#graphic-skills {
+    div#graphic-skills,
+    div.certificates {
         padding: 1.5rem 3rem 0 3rem;
     }
 
@@ -251,7 +252,8 @@
     div#contact-page,
     div#webdev-skills,
     div#graphic-skills,
-    div.dev-project-details {
+    div.dev-project-details,
+    div.certificates {
         padding: 1.5rem 15rem 0 15rem;
     }
 

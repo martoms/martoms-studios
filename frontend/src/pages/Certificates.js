@@ -124,6 +124,14 @@ const CertificateOnly = () => {
             <Breadcrumb>
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="/projects/web-development">Projects</Breadcrumb.Item>
+                {
+                    certificate === 'best-in-capstone-2' &&
+                    <Breadcrumb.Item href="/projects/web-development/64d6ca3c5868776814e63ce1">Zuitt Capstone 2</Breadcrumb.Item>
+                }
+                {
+                    certificate === 'best-in-capstone-3' &&
+                    <Breadcrumb.Item href="/projects/web-development/64d6ca3c5868776814e63ce2">Zuitt Capstone 3</Breadcrumb.Item>
+                }
                 <Breadcrumb.Item active>Certificate</Breadcrumb.Item>
             </Breadcrumb>
             <div>

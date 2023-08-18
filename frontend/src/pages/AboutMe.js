@@ -23,6 +23,12 @@ const AboutMe = () => {
                             <Button as={Link} to='https://share.zertify.zuitt.co/certificate/20315512-5638-4257-bada-4ae0ff6e218a/' target='_blank'>
                                 View Certificate
                             </Button>
+                            <Button as={Link} to='/about/best-in-capstone-2'>
+                                Best in Capstone 2
+                            </Button>
+                            <Button as={Link} to='/about/best-in-capstone-3'>
+                                Best in Capstone 3
+                            </Button>
                         </div>
                         <hr />
                     </div>
@@ -41,6 +47,12 @@ const AboutMe = () => {
                         <div className='cert-btns'>
                             <Button as={Link} to='https://share.zertify.zuitt.co/certificate/20315512-5638-4257-bada-4ae0ff6e218a/' target='_blank'>
                                 View Certificate
+                            </Button>
+                            <Button as={Link} to='/skills/web-development/best-in-capstone-2'>
+                                Best in Capstone 2
+                            </Button>
+                            <Button as={Link} to='/skills/web-development/best-in-capstone-3'>
+                                Best in Capstone 3
                             </Button>
                         </div>
                         <hr />

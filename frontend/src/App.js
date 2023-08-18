@@ -16,7 +16,7 @@ import ContactPage from './pages/ContactPage';
 import WebDevSkills from './pages/WebDevSkills';
 import GraphicDesignSkills from './pages/GraphicDesignSkills';
 import Title from './components/Title';
-import { CertificateOnly, CertificateWithLinks } from './pages/Certificates';
+import { CertificateOnly, CertificateWithLinks, CertificateWithLinksAboutPage } from './pages/Certificates';
 
 function App() {
 
@@ -35,6 +35,7 @@ function App() {
             <Route path='/skills/web-development/:certificate' element={<CertificateWithLinks />} />
             <Route path='/skills/graphic-design' element={<GraphicDesignSkills />} />
             <Route path='/about' element={<AboutMe />} />
+            <Route path='/about/:certificate' element={<CertificateWithLinksAboutPage />} />
             <Route path='/contact' element={<ContactPage />} />
             <Route path='/admin' element={<AllMessages />} />
             <Route path='/admin/:id' element={<OpenMessage />} />

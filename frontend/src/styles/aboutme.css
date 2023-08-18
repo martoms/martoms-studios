@@ -14,7 +14,12 @@
 
 div.cert-btns {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+div.cert-btns a {
+    margin-bottom: 10px;
 }
 
 /* [TABLET] */
@@ -52,6 +57,7 @@ div.cert-btns {
     .about-me-details {
         width: 65%;
         height: auto;
+        margin-bottom: 3rem;
     }
 
     .about-me-pic {

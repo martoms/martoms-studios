@@ -4,6 +4,7 @@ import useFormatDate from "../hooks/useFormatDate";
 import { Button, Breadcrumb } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Fragment } from "react";
+import loading from '../images/loading.gif';
 
 const WebDevProjectDetails = () => {
 
@@ -98,7 +99,23 @@ const WebDevProjectDetails = () => {
                 </div>
             </div>
         );
-    };
+    } else {
+        return ( 
+            <div className="dev-project-details">
+                <Breadcrumb>
+                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/projects/web-development">
+                        Projects
+                    </Breadcrumb.Item>
+                </Breadcrumb>
+                <div className="project-description">
+                    <div className="loading">
+                        <img src={loading} alt="loading" />
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
  
 export default WebDevProjectDetails;

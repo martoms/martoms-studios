@@ -9,6 +9,7 @@ import {
     CategoriesListImg,
     GraphicToolsListImg
 } from "../ComponentImages";
+import loading from '../../images/loading.gif';
 
 const Skills = () => {
 
@@ -279,7 +280,19 @@ const Skills = () => {
                 }
             </div>
         );
-    };
+    } else {
+
+        return (
+            <div className="skills">
+                <h1>Skills</h1>
+                <div className="dev">
+                    <div className="loading">
+                        <img src={loading} alt="loading" />
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
  
 export default Skills;

@@ -4,6 +4,7 @@ import useFormatDate from "../hooks/useFormatDate";
 import { Fragment, useState } from "react";
 import { Breadcrumb } from "react-bootstrap";
 import { GraphicProjectsImg } from "../components/ComponentImages";
+import loading from '../images/loading.gif';
 
 const GraphicDesignProjectDetails = () => {
 
@@ -13,7 +14,7 @@ const GraphicDesignProjectDetails = () => {
         setShowDisclaimer(false);
     };
 
-    const { category } = useParams();
+    let { category } = useParams();
     const { readableDate } = useFormatDate();
     const { details } = useFetch(`${process.env.REACT_APP_API_URL}/projects/graphic-design/${category}`)
 
@@ -111,7 +112,28 @@ const GraphicDesignProjectDetails = () => {
                 </div>
             </div>
         );
-    };
+    } else {
+
+        category = category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+        return ( 
+            <div className="dev-project-details">
+                <Breadcrumb>
+                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/projects/graphic-design">
+                        Projects
+                    </Breadcrumb.Item>
+                    <Breadcrumb.Item active>{ category }</Breadcrumb.Item>
+                </Breadcrumb>
+                <h1>{ category }</h1>
+                <div className="project-list">
+                    <div className="loading">
+                        <img src={loading} alt="loading" />
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
  
 export default GraphicDesignProjectDetails;

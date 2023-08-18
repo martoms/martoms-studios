@@ -655,6 +655,13 @@ div.dev-project-details .carousel-control-next-icon {
   filter: drop-shadow(0 0 1px black) !important;
 }
 
+/* Loading */
+div.loading {
+  margin-top: 40vh;
+  text-align: center;
+  height: 100vh;
+}
+
 /* The pulse animation */
 @keyframes pulse {
   0% {

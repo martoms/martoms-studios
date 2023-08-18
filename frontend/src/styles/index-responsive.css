@@ -313,4 +313,11 @@
         background-color: hsl(209, 100%, 50%); /* Set the color of the scrollbar thumb on hover */
         animation: hideScrollBar 2s linear forwards;
     }
+
+    /* Page not found */
+    div#page404 img {
+       height: 500px;
+       width: auto;
+    }
+    
 }

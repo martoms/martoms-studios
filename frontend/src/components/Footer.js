@@ -4,6 +4,7 @@ import linkedin from '../images/f-linkedin.svg'
 import upwork from '../images/f-upwork.svg'
 import phone from '../images/f-phone.svg'
 import email from '../images/f-email.svg'
+import fb from '../images/f-facebook.svg'
 
 const Footer = () => {
 
@@ -43,6 +44,7 @@ const Footer = () => {
                         <h4>Links</h4>
                         <Link to="https://github.com/martoms" target="_blank"><p><img src={github} alt="github" />GitHub</p></Link>
                         <Link to="https://www.linkedin.com/in/m-tomatao/" target="_blank"><p><img src={linkedin} alt="linkedin" />LinkedIn</p></Link>
+                        {/* <Link to="https://www.facebook.com/martomsstudios" target="_blank"><p><img src={fb} alt="linkedin" />Facebook</p></Link> */}
                         <Link to="https://www.upwork.com/freelancers/~010e1495f770d6ef34" target="_blank"><p><img src={upwork} alt="upwork" />Upwork</p></Link>
                     </div>
                 </div>

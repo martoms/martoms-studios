@@ -662,6 +662,28 @@ div.loading {
   height: 100vh;
 }
 
+/* Page not found */
+div#page404 {
+  height: 95vh;
+}
+
+div#page404 > div, 
+div#page404 > div > div {
+  display: flex; 
+  justify-content: center;
+}
+
+div#page404 a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  color: white;
+  background-image: linear-gradient(to bottom right, #007bdf, #b4ff51);
+  padding: 5px 15px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 5px white);
+}
+
 /* The pulse animation */
 @keyframes pulse {
   0% {

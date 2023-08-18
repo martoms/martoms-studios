@@ -22,6 +22,14 @@ div.cert-btns a {
     margin-bottom: 10px;
 }
 
+div.personal-info span {
+    font-weight: 700;
+}
+
+div.personal-info p {
+    margin: 0;
+}
+
 /* [TABLET] */
 @media (min-width: 768px) {
     .about-me-pic {

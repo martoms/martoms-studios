@@ -17,6 +17,7 @@ import WebDevSkills from './pages/WebDevSkills';
 import GraphicDesignSkills from './pages/GraphicDesignSkills';
 import Title from './components/Title';
 import { CertificateOnly, CertificateWithLinks, CertificateWithLinksAboutPage } from './pages/Certificates';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
             <Route path='/contact' element={<ContactPage />} />
             <Route path='/admin' element={<AllMessages />} />
             <Route path='/admin/:id' element={<OpenMessage />} />
+            <Route path='*' element={ <PageNotFound/> } />
           </Routes>
           <Footer />
       </Router>

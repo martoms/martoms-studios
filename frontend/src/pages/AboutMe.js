@@ -42,6 +42,15 @@ const AboutMe = () => {
                     <p className='about-me-description'>
                         I am self-taught as a graphic designer since college and I am currently employed at Father Saturnino Urios University in Butuan City as a Graphic Designer and as a Strategic Communications Staff.<br /><br />I learned computer programming and earned a certificate in Full Stack Web Development at Zuitt Coding Bootcamp from May to August 2023. Moreover, during the said bootcamp, I earned two out of three major awards, namely the Capstones&nbsp;2&nbsp;&&nbsp;3 which showcase my exceptional skills in creating a backend web server and a fullstack web app respectively.<br /><br />I am also open to offer my service as a fulltime web developer.
                     </p>
+                    <div className='personal-info'>
+                        <span>LinkedIn: </span>
+                        <Link to='https://www.linkedin.com/in/m-tomatao/' target='_blank'>
+                            https://www.linkedin.com/in/m-tomatao/
+                        </Link><br />
+                        <p><span>Email: </span><a href="mailto:tomataomarjohn@gmail.com">tomataomarjohn@gmail.com</a></p>
+                        <p><span>Address: </span>Buenavista, Agusan del Norte, PH</p>
+                        <p><span>Phone: </span>+639991130968</p>
+                    </div>                    
                     <div className='d-lg-none'>
                         <hr />
                         <div className='cert-btns'>

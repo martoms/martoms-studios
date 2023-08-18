@@ -306,7 +306,8 @@ div.dev-project-details,
 div#about-me,
 div#contact-page,
 div#webdev-skills,
-div#graphic-skills {
+div#graphic-skills,
+div.certificates {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
@@ -586,7 +587,39 @@ div.skill-links + p {
   line-height: 0.8rem;
 }
 
+
 /* Skills Page End */
+
+
+/* Certificates Start */
+div.certificates > div {
+  position: relative;
+  width: 100%;
+  min-height: 86vh;
+  margin-bottom: 1rem;
+}
+
+div.certificates > div img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+div.verification p {
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+div.certificates h1 {
+  font-weight: 900;
+}
+
+div.certificates + div {
+  padding: 0 1.5rem;
+}
+
+/* Certificates End */
 
 /* a[role='button']:hover {
   background-color: white;

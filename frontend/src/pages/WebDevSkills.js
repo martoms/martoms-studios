@@ -38,6 +38,12 @@ const WebDevSkills = () => {
                             <Button as={Link} to='https://share.zertify.zuitt.co/certificate/20315512-5638-4257-bada-4ae0ff6e218a/' target="_blank">
                                 Back-End Course
                             </Button>
+                            <Button as={Link} to='/skills/web-development/best-in-capstone-2'>
+                                Best in Capstone 2
+                            </Button>
+                            <Button as={Link} to='/skills/web-development/best-in-capstone-3'>
+                                Best in Capstone 3
+                            </Button>
                         </div>
                         <p>Full-Stack and other certificates will follow after the processing.</p>
                     </div>

@@ -61,8 +61,24 @@ const WebDevProjectDetails = () => {
                         <hr className="d-md-none" />
                     </div>
                     <div className="project-links">
-                        <Button as={Link} to={url} target="_blank">View Project</Button>
-                        <Button as={Link} to={repository.url} target="_blank">{`View Code on ${repository.platform}`}</Button>
+                        {
+                            project === 'Zuitt Capstone 2' &&
+                            <Button as={Link} to='/projects/web-development/certificates/best-in-capstone-2'>
+                                View Certificate
+                            </Button>
+                        }
+                        {
+                            project === 'Zuitt Capstone 3' &&
+                            <Button as={Link} to='/projects/web-development/certificates/best-in-capstone-3'>
+                                View Certificate
+                            </Button>
+                        }
+                        <Button as={Link} to={url} target="_blank">
+                            View Project
+                        </Button>
+                        <Button as={Link} to={repository.url} target="_blank">
+                            {`View Code on ${repository.platform}`}
+                        </Button>
                     </div>
                 </div>
                 <div className="project-description">

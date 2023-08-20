@@ -80,6 +80,9 @@ const AllMessages = () => {
                 </Form>
                 :
                 <>
+                <Button style={{display: 'block', marginLeft: 'auto'}} onClick={() => {localStorage.clear(); window.location.reload()}}>
+                    Logout
+                </Button>
                 <h1>Messages</h1>
                 <div className="messages">
                     { messageList }

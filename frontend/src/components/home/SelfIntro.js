@@ -15,6 +15,7 @@ const SelfIntro = () => {
                     I am a versatile individual at your service! <br className='d-lg-inline' />Equipped with skills in MERN Full&nbsp;Stack Web&nbsp;Development and Graphic Design.
                 </p>
                 <Link to='/about'>Show more details and credentials</Link>
+                <br /><br />
             </div>
             <div className='self-intro-pic'>
                 {

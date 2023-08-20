@@ -28,10 +28,10 @@ const AboutMe = () => {
                             <Button as={Link} to='https://share.zertify.zuitt.co/certificate/20315512-5638-4257-bada-4ae0ff6e218a/' target='_blank'>
                                 View Certificate
                             </Button>
-                            <Button as={Link} to='/about/best-in-capstone-2'>
+                            <Button as={Link} to='/about/best-in-capstone-2' target='_blank'>
                                 Best in Capstone 2
                             </Button>
-                            <Button as={Link} to='/about/best-in-capstone-3'>
+                            <Button as={Link} to='/about/best-in-capstone-3' target='_blank'>
                                 Best in Capstone 3
                             </Button>
                             <Button onClick={() => download(resume)} style={{fontWeight: '900'}}>
@@ -66,10 +66,10 @@ const AboutMe = () => {
                             <Button as={Link} to='https://share.zertify.zuitt.co/certificate/20315512-5638-4257-bada-4ae0ff6e218a/' target='_blank'>
                                 View Certificate
                             </Button>
-                            <Button as={Link} to='/skills/web-development/best-in-capstone-2'>
+                            <Button as={Link} to='/skills/web-development/best-in-capstone-2' target='_blank'>
                                 Best in Capstone 2
                             </Button>
-                            <Button as={Link} to='/skills/web-development/best-in-capstone-3'>
+                            <Button as={Link} to='/skills/web-development/best-in-capstone-3' target='_blank'>
                                 Best in Capstone 3
                             </Button>
                             <Button onClick={() => download(resume)} style={{fontWeight: '900'}}>

@@ -13,6 +13,7 @@
 
     #navbar2 a {
         color: #007bdf;
+        /* text-shadow: 0 0 2px white, 0 0 3px white; */
     }
 
     /* Dropdown Starts */
@@ -49,6 +50,7 @@
     .dropdown-content a {
         text-align: left;
         display: block;
+        text-shadow: 0 0 3px white, 0 0 5px white;
     }
 
     .dropdown-content a:hover {
@@ -216,6 +218,18 @@
 
 /* DESKTOP */
 @media (min-width: 1200px) {
+
+    .services img[alt='webdev'] {
+        object-position: 0 50%;
+    }
+
+    .carousel-caption {
+        margin-bottom: 0;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 1rem;
+    }
 
     /* Main Navbar Items */
     .nav-item a, .nav-item a:visited, .nav-item a:active {

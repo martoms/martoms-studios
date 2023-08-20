@@ -1,5 +1,6 @@
 import profilepic from '../../images/profilepic.webp'
 import placeholder from '../../images/placeholder.webp'
+import { Link } from 'react-router-dom'
 
 const SelfIntro = () => {
     return (
@@ -13,6 +14,7 @@ const SelfIntro = () => {
                 <p>
                     I am a versatile individual at your service! <br className='d-lg-inline' />Equipped with skills in MERN Full&nbsp;Stack Web&nbsp;Development and Graphic Design.
                 </p>
+                <Link to='/about'>Show more details and credentials</Link>
             </div>
             <div className='self-intro-pic'>
                 {

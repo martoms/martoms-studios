@@ -75,6 +75,7 @@ html, body {
   padding: 0 8px 0 16px;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: 700;
   color: var(--txt4);
   display: block;
   transition: 0.3s;
@@ -84,6 +85,7 @@ html, body {
 .navgroups a {
   color: var(--txt4) !important;
   margin-left: 2.5rem;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -263,6 +265,15 @@ div.services {
   filter: drop-shadow(0 0 10px black);
 }
 
+.services img[alt='webdev'] {
+  object-position: -8rem 0;
+}
+
+.carousel-indicators,
+.carousel-caption {
+  margin-bottom: 4rem;
+}
+
 .services .carousel-item {
   position: relative;
 }
@@ -321,6 +332,10 @@ div.contact h2,
 div#webdev-skills h1,
 div#graphic-skills h1 {
   font-weight: 900;
+}
+
+.self-intro h1 {
+  /* color: #007bdf; */
 }
 
 .self-intro h3,
@@ -682,6 +697,33 @@ div#page404 a {
   padding: 5px 15px;
   border-radius: 10px;
   filter: drop-shadow(0 0 5px white);
+}
+
+/* Loading Images */
+.self-intro-pic,
+.about-me-pic {
+  background-color: grey;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ccc, #ddd);
+  animation: placeholder 1s ease-in-out infinite;
+}
+
+@keyframes placeholder {
+  0% {
+      background: linear-gradient(to right, #ccc, #ddd);
+  }
+  25% {
+      background: linear-gradient(to right, #ccc, #d0d0d0, #ddd);
+  }
+  50% {
+      background: linear-gradient(to right, #ddd, #ccc, #ddd);
+  }
+  75% {
+      background: linear-gradient(to right, #ddd, #d0d0d0, #ccc);
+  }
+  100% {
+      background: linear-gradient(to right, #ccc, #ddd);
+  }
 }
 
 /* The pulse animation */

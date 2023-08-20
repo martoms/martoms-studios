@@ -3,8 +3,13 @@ import placeholder from '../images/placeholder.webp'
 import { Button, Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Contact from '../components/Contact';
+import DownloadFile from '../components/DownloadFile';
+const resume = 'https://martoms-studios.vercel.app/Tomatao_Marjohn_CV.pdf';
 
 const AboutMe = () => {
+
+    const { download } = DownloadFile();
+
     return (
         <div id="about-me">
             <Breadcrumb>
@@ -29,8 +34,12 @@ const AboutMe = () => {
                             <Button as={Link} to='/about/best-in-capstone-3'>
                                 Best in Capstone 3
                             </Button>
+                            <Button onClick={() => download(resume)} style={{fontWeight: '900'}}>
+                                Download CV
+                            </Button>
                         </div>
                         <hr />
+                        
                     </div>
                 </div>
                 <div className='about-me-details'>
@@ -62,6 +71,9 @@ const AboutMe = () => {
                             </Button>
                             <Button as={Link} to='/skills/web-development/best-in-capstone-3'>
                                 Best in Capstone 3
+                            </Button>
+                            <Button onClick={() => download(resume)} style={{fontWeight: '900'}}>
+                                Download CV
                             </Button>
                         </div>
                         <hr />

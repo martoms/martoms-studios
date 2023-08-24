@@ -4,7 +4,7 @@ import { Button, Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Contact from '../components/Contact';
 import DownloadFile from '../components/DownloadFile';
-const resume = 'https://martoms-studios.vercel.app/Tomatao_Marjohn_CV.pdf';
+const resume = 'https://martoms-studios.vercel.app/Tomatao-Marjohn-CV.pdf';
 
 const AboutMe = () => {
 

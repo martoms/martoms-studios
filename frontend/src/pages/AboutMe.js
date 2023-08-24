@@ -25,8 +25,8 @@ const AboutMe = () => {
                     <div className='d-none d-lg-block'>
                         <hr />
                         <div className='cert-btns'>
-                            <Button as={Link} to='https://share.zertify.zuitt.co/certificate/20315512-5638-4257-bada-4ae0ff6e218a/' target='_blank'>
-                                View Certificate
+                            <Button as={Link} to='https://share.zertify.zuitt.co/certificate/6b4d58f0-cc66-4b3b-96f6-5f2936d3ba71/' target="_blank">
+                                MERN Full Stack Certificate
                             </Button>
                             <Button as={Link} to='/about/best-in-capstone-2' target='_blank'>
                                 Best in Capstone 2

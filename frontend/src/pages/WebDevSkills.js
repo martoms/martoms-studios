@@ -32,11 +32,8 @@ const WebDevSkills = () => {
                     <div className="skill-certs">
                         <p>View Certifications:</p>
                         <div className="skill-links">
-                            <Button as={Link} to='https://share.zertify.zuitt.co/certificate/0aecaa8d-e58d-440c-a911-a1152d4f1d03/' target="_blank">
-                                Front-End Course
-                            </Button>
-                            <Button as={Link} to='https://share.zertify.zuitt.co/certificate/20315512-5638-4257-bada-4ae0ff6e218a/' target="_blank">
-                                Back-End Course
+                            <Button as={Link} to='https://share.zertify.zuitt.co/certificate/6b4d58f0-cc66-4b3b-96f6-5f2936d3ba71/' target="_blank">
+                                MERN Full Stack Certificate
                             </Button>
                             <Button as={Link} to='/skills/web-development/best-in-capstone-2'>
                                 Best in Capstone 2
@@ -45,7 +42,6 @@ const WebDevSkills = () => {
                                 Best in Capstone 3
                             </Button>
                         </div>
-                        <p>Full-Stack and other certificates will follow after the processing.</p>
                     </div>
                 </div>
             </div>

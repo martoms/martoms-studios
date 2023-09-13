@@ -2,6 +2,8 @@
 import html5 from '../images/html5.svg'
 import css3 from '../images/css3.svg'
 import javascript from '../images/javascript.svg'
+import ts from '../images/ts.svg'
+import php from '../images/php.svg'
 // Frameworks
 import bootstrap from '../images/bootstrap.svg'
 import expressjs from '../images/expressjs.svg'
@@ -18,6 +20,7 @@ import vercel from '../images/vercel.svg'
 // Databases
 import nosql from '../images/nosql.svg'
 import mongo from '../images/mongo.svg'
+import mysql from '../images/mysql.svg'
 // Category
 import logomaking from '../images/logomaking.webp'
 import poster from '../images/poster.webp'
@@ -65,6 +68,10 @@ const LanguagesListImg = ({language}) => {
             return (<img src={css3} alt="css3" />);
         case 'JavaScript':
             return (<img src={javascript} alt="javascript" />);
+        case 'TypeScript':
+            return (<img src={ts} alt="ts" />);
+        case 'PHP':
+            return (<img src={php} alt="php" />);
         default:
             return (<img src={placeholder} alt="placeholder" />)
     }
@@ -116,6 +123,8 @@ const DatabaseListImg = ({database}) => {
             return (<img src={nosql} alt="nosql" />);
         case 'MongoDB':
             return (<img src={mongo} alt="mongo" />);
+        case 'MySQL':
+            return (<img src={mysql} alt="mysql" />);
         default:
             return (<img src={placeholder} alt="placeholder" />)
     }

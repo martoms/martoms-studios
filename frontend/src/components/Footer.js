@@ -4,7 +4,6 @@ import linkedin from '../images/f-linkedin.svg'
 import upwork from '../images/f-upwork.svg'
 import phone from '../images/f-phone.svg'
 import email from '../images/f-email.svg'
-import fb from '../images/f-facebook.svg'
 
 const Footer = () => {
 

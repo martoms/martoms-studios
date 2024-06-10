@@ -1,6 +1,6 @@
 import profilepic from '../images/profilepic.webp'
 import placeholder from '../images/placeholder.webp'
-import { Button, Breadcrumb } from 'react-bootstrap';
+import { Button, Breadcrumb, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Contact from '../components/Contact';
 import DownloadFile from '../components/DownloadFile';
@@ -28,13 +28,36 @@ const AboutMe = () => {
                             <Button as={Link} to='https://share.zertify.zuitt.co/certificate/6b4d58f0-cc66-4b3b-96f6-5f2936d3ba71/' target="_blank">
                                 MERN Full Stack Certificate
                             </Button>
+                            <Dropdown className='dropdown-btn'>
+                                <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                                    Short Course Certificates
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item
+                                        href="https://share.zertify.zuitt.co/certificate/56f8b561-90b9-4716-9e0b-addf894c5043/"
+                                        target="_blank">
+                                    AWS Fundamentals
+                                    </Dropdown.Item>
+                                    <Dropdown.Item
+                                        href="https://share.zertify.zuitt.co/certificate/923a66e6-c4d0-4fcc-b79d-7dbfae22c930/"
+                                        target="_blank">
+                                    AWS Serverless
+                                    </Dropdown.Item>
+                                    <Dropdown.Item
+                                        href="https://share.zertify.zuitt.co/certificate/d4e39626-dc0b-4218-a533-099dc1f9e56b/"
+                                        target="_blank">
+                                    Unit Test
+                                    </Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                             <Button as={Link} to='/about/best-in-capstone-2' target='_blank'>
                                 Best in Capstone 2
                             </Button>
                             <Button as={Link} to='/about/best-in-capstone-3' target='_blank'>
                                 Best in Capstone 3
                             </Button>
-                            <Button onClick={() => download(resume)} style={{fontWeight: '900'}}>
+                            <Button variant="success" onClick={() => download(resume)} style={{fontWeight: '900'}}>
                                 Download CV
                             </Button>
                         </div>
